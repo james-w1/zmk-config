@@ -16,7 +16,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -96,7 +99,7 @@
        &kp ESCAPE   &kp Q   &kp W   &kp E      &kp R   &none   &none   &none   &none   &none
    &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F   &none   &none   &none   &none   &none
  &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V   &none   &none   &none   &none   &none
-                                    &to 0  &kp SPACE   &none   &none
+                                    &none  &kp SPACE   &none   &to 2
             >;
         };
 
@@ -105,7 +108,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+                          &to 0  &trans  &trans  &trans
             >;
         };
     };
