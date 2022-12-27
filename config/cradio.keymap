@@ -14,7 +14,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -69,10 +72,10 @@
 
         num {
             bindings = <
-    &kp INS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3            &kp     &kp     &kp     &kp     &kp        &kp
- &kp DELETE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp undefined     &kp     &kp     &kp     &kp    &kp ESC
-   &kp CAPS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &to 3     &kp     &kp     &kp  &kp ENTER
-                                                  &kp        &kp TAB     &kp     &kp
+ &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+ &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL   &kp SINGLE_QUOTE         &none         &none         &none         &none       &kp ESC
+      &kp TAB         &none           &none         &kp TILDE  &kp DOUBLE_QUOTES         &to 3         &none         &none         &none     &kp ENTER
+                                                        &none              &none         &none         &none
             >;
         };
 
