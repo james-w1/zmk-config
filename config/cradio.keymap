@@ -11,7 +11,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -51,10 +54,10 @@
 
         default_layer {
             bindings = <
-    &kp Q     &kp W    &kp     &kp     &kp     &kp     &kp     &kp     &kp        &kp
- &kp DELETE     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp    &kp ESC
-   &kp CAPS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp  &kp ENTER
-                                &kp     &kp     &kp     &kp
+  &kp Q   &kp W   &kp E   &kp R          &kp T        &kp Y   &kp U      &kp I       &kp O          &kp P
+  &kp A   &kp S   &kp D   &kp F          &kp G        &kp H   &kp J      &kp K       &kp L  &kp SEMICOLON
+  &kp Z   &kp X   &kp C   &kp V          &kp B        &kp N   &kp M  &kp COMMA  &kp PERIOD      &kp SLASH
+                          &to 0  &kp BACKSPACE  &lt 1 SPACE   &to 2
             >;
         };
 
