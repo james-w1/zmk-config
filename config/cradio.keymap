@@ -10,7 +10,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -54,16 +57,16 @@
             >;
         };
 
-        sym {
+        num {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+    &kp INS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp        &kp
+ &kp DELETE     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp    &kp ESC
+   &kp CAPS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp  &kp ENTER
+                                &kp     &kp     &kp     &kp
             >;
         };
 
-        Layer__3 {
+        sym {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
