@@ -19,7 +19,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -93,19 +96,19 @@
 
         num {
             bindings = <
- &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
- &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL   &kp SINGLE_QUOTE         &none         &none         &none         &none       &kp ESC
-      &kp TAB     &kp SLASH        &kp PIPE         &kp TILDE  &kp DOUBLE_QUOTES         &to 3         &none         &none         &none     &kp ENTER
-                                                        &none              &none         &none         &none
+ &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+ &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL         &none      &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT       &kp ESC
+      &kp TAB         &none           &none             &none         &none         &to 3         &none         &none         &none     &kp ENTER
+                                                        &none         &none         &none         &none
             >;
         };
 
         sym {
             bindings = <
-  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
-  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
-  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
-                          &to 0  &kp BACKSPACE  &kp SPACE   &none
+     &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR        &kp PERCENT  &kp CARET         &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+ &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT   &kp LCTRL   &kp SINGLE_QUOTE  &kp MINUS        &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
+        &none         &none           &none   &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER         &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+                                                  &to 0      &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
 
