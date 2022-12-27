@@ -22,7 +22,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -89,7 +92,7 @@
         };
 
         reset {
-            bindings = <&reset>;
+            bindings = <&bootloader>;
             key-positions = <10 19>;
             layers = <4>;
         };
@@ -146,6 +149,15 @@
           &kp TAB   &kp A   &kp S           &kp D      &kp F         &none        &kp F5   &kp F6   &kp F7   &kp F8
  &kp LEFT_CONTROL   &kp Z   &kp X           &kp C      &kp V         &none        &kp F9  &kp F10  &kp F11  &kp F12
                                    &kp LEFT_SHIFT  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP
+            >;
+        };
+
+        config {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans   &to 2
             >;
         };
     };
