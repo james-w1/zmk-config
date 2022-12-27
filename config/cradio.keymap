@@ -18,7 +18,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -99,10 +102,10 @@
 
         sym {
             bindings = <
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-                          &to 0   &none   &none   &none
+  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
+  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
+  &none   &none   &none   &none          &none      &none   &none   &none   &none   &none
+                          &to 0  &kp BACKSPACE  &kp SPACE   &none
             >;
         };
 
