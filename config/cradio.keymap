@@ -51,9 +51,10 @@
 
         default_layer {
             bindings = <
-   &kp Q                     &kp W   &kp E          &kp R        &kp T   &kp Y   &kp U   &kp I   &kp O  &kp P HRML(A, S, D, F)
-   &kp G  &kp H HRMR(J, K, L, SQT)   &kp Z          &kp X        &kp C   &kp V   &kp B   &kp N   &kp M               &kp COMMA
- &kp DOT                  &kp FSLH   &to 0  &kp BACKSPACE  &lt 1 SPACE   &to 2
+    &kp Q     &kp W    &kp     &kp     &kp     &kp     &kp     &kp     &kp        &kp
+ &kp DELETE     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp    &kp ESC
+   &kp CAPS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp  &kp ENTER
+                                &kp     &kp     &kp     &kp
             >;
         };
 
