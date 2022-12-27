@@ -17,7 +17,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -64,6 +67,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&to 0>;
+            key-positions = <30 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -96,10 +108,10 @@
 
         gaming {
             bindings = <
-       &kp ESCAPE   &kp Q   &kp W   &kp E      &kp R   &none   &none   &none   &none   &none
-   &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F   &none   &none   &none   &none   &none
- &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V   &none   &none   &none   &none   &none
-                                    &none  &kp SPACE   &none   &to 2
+       &kp ESCAPE   &kp Q   &kp W           &kp E      &kp R   &none   &none   &none   &none   &none
+          &kp TAB   &kp A   &kp S           &kp D      &kp F   &none   &none   &none   &none   &none
+ &kp LEFT_CONTROL   &kp Z   &kp X           &kp C      &kp V   &none   &none   &none   &none   &none
+                                   &kp LEFT_SHIFT  &kp SPACE   &none   &none
             >;
         };
 
