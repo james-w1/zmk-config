@@ -8,7 +8,10 @@
 
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -42,9 +45,27 @@
 
         default_layer {
             bindings = <
-   &kp Q                     &kp W      &kp E          &kp R      &kp T       &kp Y   &kp U   &kp I   &kp O  &kp P HRML(A, S, D, F)
-   &kp G  &kp H HRMR(J, K, L, SQT)      &kp Z          &kp X      &kp C       &kp V   &kp B   &kp N   &kp M               &kp COMMA
- &kp DOT                  &kp FSLH  &lt 2 TAB  &kp BACKSPACE  &kp SPACE  &lt 1 BSPC
+   &kp Q                     &kp W   &kp E          &kp R        &kp T   &kp Y   &kp U   &kp I   &kp O  &kp P HRML(A, S, D, F)
+   &kp G  &kp H HRMR(J, K, L, SQT)   &kp Z          &kp X        &kp C   &kp V   &kp B   &kp N   &kp M               &kp COMMA
+ &kp DOT                  &kp FSLH   &to 0  &kp BACKSPACE  &lt 1 SPACE   &to 2
+            >;
+        };
+
+        num {
+            bindings = <
+    &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp
+    &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp
+    &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp
+                            &kp     &kp     &kp     &kp
+            >;
+        };
+
+        sym {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans
             >;
         };
     };
