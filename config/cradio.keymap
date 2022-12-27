@@ -15,7 +15,10 @@
 
 
 
+
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+
 
 
 
@@ -74,26 +77,26 @@
             bindings = <
  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL   &kp SINGLE_QUOTE         &none         &none         &none         &none       &kp ESC
-      &kp TAB         &none           &none         &kp TILDE  &kp DOUBLE_QUOTES         &to 3         &none         &none         &none     &kp ENTER
+      &kp TAB     &kp SLASH        &kp PIPE         &kp TILDE  &kp DOUBLE_QUOTES         &to 3         &none         &none         &none     &kp ENTER
                                                         &none              &none         &none         &none
             >;
         };
 
         sym {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+                          &to 0   &none   &none   &none
             >;
         };
 
         gaming {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+       &kp ESCAPE   &kp Q   &kp W   &kp E      &kp R   &none   &none   &none   &none   &none
+   &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F   &none   &none   &none   &none   &none
+ &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V   &none   &none   &none   &none   &none
+                                    &to 0  &kp SPACE   &none   &none
             >;
         };
 
