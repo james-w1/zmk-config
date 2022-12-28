@@ -7,19 +7,7 @@
 // Home row mods macro
 
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-
-
-
-
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
-
-
-
-
-
-
-
-
 
 / {
     behaviors {
@@ -46,42 +34,70 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+    };
+
+    macros {
+        minus_arrow: minus_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+        };
+        equals_arrow: equals_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-    &kp Q     &kp W    &kp     &kp     &kp     &kp     &kp     &kp     &kp        &kp
- &kp DELETE     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp    &kp ESC
-   &kp CAPS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp  &kp ENTER
-                                &kp     &kp     &kp     &kp
+          &kp Q           &kp W             &kp E               &kp R          &kp T        &kp Y                &kp U         &kp I            &kp O               &kp P
+ &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F          &kp G        &kp H  &mt RIGHT_CONTROL J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI
+          &kp Z           &kp X             &kp C               &kp V          &kp B        &kp N                &kp M     &kp COMMA       &kp PERIOD           &kp SLASH
+                                                                &to 0  &kp BACKSPACE  &lt 1 SPACE                &to 2
             >;
         };
 
         num {
             bindings = <
-    &kp INS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp        &kp
- &kp DELETE     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp    &kp ESC
-   &kp CAPS     &kp     &kp     &kp     &kp     &kp     &kp     &kp     &kp  &kp ENTER
-                                &kp     &kp     &kp     &kp
+ &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+ &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL    &kp PAGE_UP      &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT       &kp ESC
+      &kp TAB      &kp CAPS      &kp DELETE        &kp INSERT  &kp PAGE_DOWN         &to 3         &to 4      &kp HOME       &kp END     &kp ENTER
+                                                        &none          &none         &none         &none
             >;
         };
 
         sym {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+     &kp EXCL         &kp AT        &kp HASH  &kp DOLLAR        &kp PERCENT  &kp CARET         &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+ &kp LEFT_GUI   &kp LEFT_ALT  &kp LEFT_SHIFT   &kp LCTRL   &kp SINGLE_QUOTE  &kp MINUS        &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
+        &none  &equals_arrow    &minus_arrow   &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER         &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+                                                   &to 0      &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
 
         gaming {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+       &kp ESCAPE   &kp Q   &kp W           &kp E      &kp R   &none  &kp F1   &kp F2   &kp F3   &kp F4
+          &kp TAB   &kp A   &kp S           &kp D      &kp F   &none  &kp F5   &kp F6   &kp F7   &kp F8
+ &kp LEFT_CONTROL   &kp Z   &kp X           &kp C      &kp V   &none  &kp F9  &kp F10  &kp F11  &kp F12
+                                   &kp LEFT_SHIFT  &kp SPACE   &none   &to 2
+            >;
+        };
+
+        config {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans       &reset  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans       &trans   &to 2
             >;
         };
     };
