@@ -42,12 +42,6 @@
             key-positions = <30 31>;
             layers = <3>;
         };
-
-        reset {
-            bindings = <&bootloader>;
-            key-positions = <10 19>;
-            layers = <4>;
-        };
     };
 
     macros {
@@ -106,10 +100,10 @@
 
         config {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans   &to 2
+ &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans       &reset  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans       &trans   &to 2
             >;
         };
     };
