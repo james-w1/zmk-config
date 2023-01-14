@@ -32,13 +32,13 @@
     macros {
         minus_arrow: minus_arrow {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "minus-arrow macro";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT>;
         };
         equals_arrow: equals_arrow {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "equals-arrow macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
         };
