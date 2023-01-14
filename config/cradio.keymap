@@ -52,16 +52,16 @@
             &kp Q               &kp W           &kp E           &kp R          &kp T        &kp Y            &kp U            &kp I                &kp O                 &kp P
  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F          &kp G        &kp H  &mt RIGHT_ALT J  &mt RIGHT_GUI K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMI
             &kp Z               &kp X           &kp C           &kp V          &kp B        &kp N            &kp M        &kp COMMA           &kp PERIOD             &kp SLASH
-                                                              &kp ESC  &kp BACKSPACE  &lt 1 SPACE            &to 2
+                                                                &to 1  &kp BACKSPACE  &lt 1 SPACE            &to 2
             >;
         };
 
         num {
             bindings = <
-   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
- &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp PAGE_UP      &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT       &kp ESC
-        &kp TAB          &kp CAPS    &kp DELETE    &kp INSERT  &kp PAGE_DOWN         &to 3         &to 4      &kp HOME       &kp END     &kp ENTER
-                                                        &none          &none         &none         &none
+   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+ &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp PAGE_UP      &kp LEFT         &kp DOWN        &kp UP     &kp RIGHT       &kp ESC
+        &kp TAB          &kp CAPS    &kp DELETE    &kp INSERT  &kp PAGE_DOWN         &to 5  &kp PRINTSCREEN      &kp HOME       &kp END     &kp ENTER
+                                                        &to 0          &none         &none            &to 2
             >;
         };
 
@@ -69,26 +69,35 @@
             bindings = <
        &kp EXCL            &kp AT      &kp HASH    &kp DOLLAR        &kp PERCENT  &kp CARET         &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT   &kp SINGLE_QUOTE  &kp MINUS        &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
-          &none     &equals_arrow  &minus_arrow     &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER         &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+          &to 3     &equals_arrow  &minus_arrow     &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER         &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
                                                         &to 0      &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
 
         gaming {
             bindings = <
-       &kp ESCAPE   &kp Q   &kp W    &kp E      &kp R   &kp T  &kp F1   &kp F2   &kp F3   &kp F4
- &kp LEFT_CONTROL   &kp A   &kp S    &kp D      &kp F   &kp G  &kp F5   &kp F6   &kp F7   &kp F8
-   &kp LEFT_SHIFT   &kp Z   &kp X    &kp C      &kp V   &kp B  &kp F9  &kp F10  &kp F11  &kp F12
-                                   &kp TAB  &kp SPACE   &none   &to 2
+       &kp ESCAPE   &kp Q   &kp W   &kp E      &kp R   &kp K_PLAY_PAUSE  &kp F1   &kp F2   &kp F3   &kp F4
+   &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F    &kp K_VOLUME_UP  &kp F5   &kp F6   &kp F7   &kp F8
+ &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V  &kp K_VOLUME_DOWN  &kp F9  &kp F10  &kp F11  &kp F12
+                                    &mo 4  &kp SPACE              &none   &to 2
+            >;
+        };
+
+        gaming_2 {
+            bindings = <
+          &kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans  &trans
+   &kp LEFT_SHIFT         &kp G         &kp H         &kp J         &kp K  &trans  &trans  &trans  &trans  &trans
+ &kp LEFT_CONTROL         &kp B         &kp N         &kp M         &none  &trans  &trans  &trans  &trans  &trans
+                                                     &trans        &trans  &trans  &trans
             >;
         };
 
         config {
             bindings = <
-   &bt BT_CLR    &bt BT_PRV    &bt BT_NXT   &bootloader        &reset   &none   &none   &none   &none   &none
- &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &reset   &none   &none   &none   &none
-        &none         &none         &none         &none         &none   &none   &none   &none   &none   &none
-                                                  &none         &none   &none   &to 2
+   &bt BT_CLR    &bt BT_PRV    &bt BT_NXT   &bootloader        &reset  &trans  &trans  &trans  &trans  &trans
+ &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
+       &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans        &trans  &trans  &trans
             >;
         };
     };
