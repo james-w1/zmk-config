@@ -69,7 +69,7 @@
             bindings = <
        &kp EXCL            &kp AT      &kp HASH    &kp DOLLAR        &kp PERCENT  &kp CARET   &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT   &kp SINGLE_QUOTE  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
-          &to 5     &equals_arrow  &minus_arrow     &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER   &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+          &to 5             &none     &kp GRAVE     &kp TILDE  &kp DOUBLE_QUOTES  &kp UNDER   &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
                                                         &to 0      &kp BACKSPACE  &kp SPACE  &kp ENTER
             >;
         };
