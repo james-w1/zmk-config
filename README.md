@@ -8,4 +8,4 @@ Featuring:
 - nav+number layer
 - Dual one-handed gaming layer
 
-![image](./sweep_keymap.ortho.svg) 
+![image](./images/sweep_keymap.ortho.svg) 
