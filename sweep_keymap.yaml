@@ -1,0 +1,48 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  default_layer:
+  - [Q, W, F, P, B, J, L, U, Y, ;]
+  - - {t: A, h: LEFT SHIFT}
+    - {t: R, h: LEFT CONTROL}
+    - {t: S, h: LEFT GUI}
+    - {t: T, h: LEFT ALT}
+    - G
+    - M
+    - {t: N, h: RIGHT ALT}
+    - {t: E, h: RIGHT GUI}
+    - {t: I, h: RIGHT CONTROL}
+    - {t: O, h: RSHFT}
+  - [Z, X, C, D, V, K, H, ',', ., /]
+  - - '&key_repeat'
+    - BACKSPACE
+    - {t: SPACE, h: num}
+    - sym
+  num:
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - [LEFT SHIFT, LEFT CONTROL, LEFT GUI, LEFT ALT, PAGE UP, LEFT, DOWN, UP, RIGHT, ESC]
+  - [TAB, CAPS, DELETE, INSERT, PAGE DOWN, LS(LG(Q)), LS(LG(S)), HOME, END, ENTER]
+  - ['', BACKSPACE, SPACE, '']
+  sym:
+  - ['!', '@', '#', $, '%', ^, '&', '*', (, )]
+  - [LEFT SHIFT, LEFT CONTROL, LEFT GUI, LEFT ALT, '''', '-', '=', '[', ']', \]
+  - [config, gaming, '`', '~', '"', _, +, '{', '}', '|']
+  - [default_layer, BACKSPACE, SPACE, ENTER]
+  gaming:
+  - [ESCAPE, Q, W, E, R, PLAY PAUSE, F1, F2, F3, F4]
+  - [LEFT SHIFT, A, S, D, F, VOLUME UP, F5, F6, F7, F8]
+  - [LEFT CONTROL, Z, X, C, V, VOLUME DOWN, F9, F10, F11, F12]
+  - [gaming_2, SPACE, '', default_layer]
+  gaming_2:
+  - [TAB, '1', '2', '3', '4', '', '', '', '', '']
+  - [LEFT SHIFT, G, H, J, K, '', '', '', '', '']
+  - [LEFT CONTROL, B, N, M, '', '', '', '', '', '']
+  - ['', '', '', '']
+  config:
+  - [BT CLR, BT PRV, BT NXT, '&bootloader', '&reset', '', '', '', '', '']
+  - [BT 0, BT 1, BT 2, BT 3, BT 4, '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '', '']
+  - [default_layer, '', '', '']
+combos:
+- p: [20, 29]
+  k: '&caps_word'
+  l: [default_layer]
