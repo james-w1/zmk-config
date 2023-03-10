@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   alphas:
-  - [Q, W, F, P, B, J, L, U, Y, ;]
+  - [Q, W, F, P, B, J, L, U, Y, '''']
   - - {t: A, h: SHIFT}
     - {t: R, h: CONTROL}
     - {t: S, h: GUI}
@@ -24,8 +24,8 @@ layers:
   - ['', BSPACE, SPACE, '']
   sym:
   - ['!', '@', '#', $, '%', ^, '&', '*', (, )]
-  - [SHIFT, CONTROL, GUI, ALT, '''', '-', '=', '[', ']', \]
-  - [config, gaming, '`', '~', '"', _, +, '{', '}', '|']
+  - [SHIFT, CONTROL, GUI, ALT, ':', '-', '=', '[', ']', \]
+  - [config, gaming, '`', '~', ';', _, +, '{', '}', '|']
   - [alphas, BSPACE, SPACE, ENTER]
   gaming:
   - [ESC, Q, W, E, R, PLAY PAUSE, F1, F2, F3, F4]
