@@ -14,7 +14,7 @@ layers:
     - {t: O, h: RSHFT}
   - [Z, X, C, D, V, K, H, ',', ., /]
   - - 'key repeat'
-    - BACKSPACE
+    - BSPACE
     - {t: SPACE, h: num}
     - sym
   num:

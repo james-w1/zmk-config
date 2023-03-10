@@ -145,7 +145,7 @@ path {
 <text x="254.0" y="294.0" class="tap">
 <tspan x="254.0" dy="-0.6em">key</tspan><tspan x="254.0" dy="1.2em">repeat</tspan></text>
 <rect rx="6.0" ry="6.0" x="284.0" y="282.0" width="52.0" height="52.0" class=""/>
-<text x="310.0" y="308.0" class="tap">BACKSPACE</text>
+<text x="310.0" y="308.0" class="tap">BSPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="282.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="308.0" class="tap">SPACE</text>
 <text x="422.0" y="332.0" class="hold">num</text>
