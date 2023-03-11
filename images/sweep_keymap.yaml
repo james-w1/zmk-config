@@ -46,3 +46,6 @@ combos:
 - p: [20, 29]
   k: 'caps word'
   l: [alphas]
+- p: [31, 32]
+  k: 'chord'
+  l: [alphas]

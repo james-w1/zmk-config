@@ -156,6 +156,10 @@ path {
 <rect rx="6.0" ry="6.0" x="352.0" y="235.08" width="28.0" height="26.0" class="combo"/>
 <text x="366.0" y="248.08" class="combo">
 <tspan x="366.0" dy="-0.6em">caps</tspan><tspan x="366.0" dy="1.2em">word</tspan></text>
+<path d="M366.0,308.0 l-37.33333333333333,0.0"/>
+<path d="M366.0,308.0 l37.33333333333333,0.0"/>
+<rect rx="6.0" ry="6.0" x="352.0" y="295.0" width="28.0" height="26.0" class="combo"/>
+<text x="366.0" y="308.0" class="combo">chord</text>
 </g>
 <g class="layer-num">
 <text x="30.0" y="364.0" class="label">num:</text>
