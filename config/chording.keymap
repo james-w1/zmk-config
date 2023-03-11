@@ -33,7 +33,6 @@
 #define MACRO_WAIT 0
 
 macros {
-  // MACROS START
     ZMK_MACRO(m_the,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP>;
@@ -2335,7 +2334,6 @@ macros {
         bindings = <&kp A &kp M &kp O &kp N &kp G &kp SPACE>;
     )
 
-  // MACROS END
     ZMK_MACRO(m_ofc,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP>;
@@ -2344,7 +2342,6 @@ macros {
 }
 combos {
   compatible = "zmk,combos";
-  // COMBOS START
     combo_m_the {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <P_COMBO P_T>;
@@ -4646,7 +4643,6 @@ combos {
       bindings = <&m_among>;
     };
 
-  // COMBOS END
     combo_m_ofc {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <P_COMBO P_O P_F P_C>;
