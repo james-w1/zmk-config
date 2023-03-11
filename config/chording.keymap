@@ -33,6 +33,7 @@
 #define MACRO_TAP 10
 #define MACRO_WAIT 0
 
+\ {
 macros {
     ZMK_MACRO(m_the,
         wait-ms = <MACRO_WAIT>;
@@ -2341,6 +2342,9 @@ macros {
         bindings = <&kp O &kp F &kp SPACE &kp C &kp O &kp U &kp R &kp S &kp E &kp SPACE>;
     )
 }
+};
+
+\ {
 combos {
   compatible = "zmk,combos";
     combo_m_the {
@@ -4650,3 +4654,4 @@ combos {
       bindings = <&m_ofc>;
     };
 }
+};
