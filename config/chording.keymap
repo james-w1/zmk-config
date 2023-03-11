@@ -2341,7 +2341,7 @@
             tap-ms = <MACRO_TAP>;
             bindings = <&kp O &kp F &kp SPACE &kp C &kp O &kp U &kp R &kp S &kp E &kp SPACE>;
         )
-    }
+    };
 };
 
 / {
@@ -4653,5 +4653,5 @@
           key-positions = <P_COMBO P_O P_F P_C>;
           bindings = <&m_ofc>;
         };
-    }
+    };
 };
