@@ -27,6 +27,7 @@
 #define P_H 26
 #define P_COMA 27
 #define P_DOT 28
+#define P_COMBO 31 32
 
 #define COMBO_TIMEOUT 200
 #define MACRO_TAP 10
