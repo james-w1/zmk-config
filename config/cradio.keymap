@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "chording.keymap"
 &mt {
     flavor = "tap-preferred";
 };
