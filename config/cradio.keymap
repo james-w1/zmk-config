@@ -54,7 +54,7 @@
 
         default_layer {
             bindings = <
-           &kp Q               &kp W           &kp F           &kp P          &kp B        &kp J            &kp L            &kp U                &kp Y     &kp APOS
+           &kp Q               &kp W           &kp F           &kp P          &kp B        &kp J            &kp L            &kp U                &kp Y     &kp SEMI
 &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_GUI S  &mt LEFT_ALT T          &kp G        &kp M  &mt RIGHT_ALT N  &mt RIGHT_GUI E  &mt RIGHT_CONTROL I  &mt RSHFT O
            &kp Z               &kp X           &kp C           &kp D          &kp V        &kp K            &kp H        &kp COMMA           &kp PERIOD    &kp SLASH
                                                          &key_repeat  &kp BACKSPACE  &lt 1 SPACE            &to 2
@@ -73,8 +73,8 @@
         sym {
             bindings = <
       &kp EXCL            &kp AT      &kp HASH    &kp DOLLAR    &kp PERCENT  &kp CARET   &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT      &kp COLON  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
-         &to 5             &to 3     &kp GRAVE     &kp TILDE       &kp SEMI  &kp UNDER   &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT        &kp SQT  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &kp BACKSLASH
+         &to 5             &to 3     &kp GRAVE     &kp TILDE        &kp DQT  &kp UNDER   &kp PLUS    &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
                                                        &to 0  &kp BACKSPACE  &kp SPACE  &kp ENTER
             >;
         };
@@ -92,7 +92,7 @@
             bindings = <
          &kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans  &trans
   &kp LEFT_SHIFT         &kp G         &kp H         &kp J         &kp K  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL         &kp B         &kp N         &kp M         &none  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL         &kp B         &kp N         &kp M  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans
                                                     &trans        &trans  &trans  &trans
             >;
         };
